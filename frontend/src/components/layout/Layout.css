@@ -1,0 +1,130 @@
+/* **************************************************************************************************** */
+/* HEADER */
+
+.header {
+	position: sticky;
+	top: 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	list-style: none;
+}
+
+.header a {
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header p, .header a, .header .menu-icons {
+	color: #fff;
+}
+
+.header span {
+	color: orangered;
+}
+
+.header .btn {
+	border: none;
+}
+
+.header .btn a {
+	border: 8px solid orangered;
+	border-radius: 3px;
+	background: orangered;
+	transition: all 0.3s;
+}
+
+.header p, .header .menu-icons:hover {
+	cursor: pointer;
+}
+
+.header .menu-icons:hover, .header a:hover {
+	color: orangered;
+}
+
+.header .btn a:hover {
+	color: #fff;
+	padding: 2px 25px;
+}
+
+.header .menu-icons {
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	.header .menu {
+		display: none;
+   }
+
+	.header .menu-icons {
+		display: block;
+   }
+
+	.header #mobile-menu, .header #hide-mobile-menu, .header .show-mobile {
+		display: block;
+		position: absolute;
+		top: 55px;
+		width: 100%;
+		height: fit-content;
+		border: 2px solid #fff;
+		padding: 20px;
+		transition: all 0.8s;
+   }
+
+	.header .show-mobile {
+		left: 0;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.7);
+   }
+
+	.header #mobile-menu {
+		left: 0;
+   }
+
+	.header #hide-mobile-menu {
+		left: -100%;
+   }
+
+	.header #mobile-menu li, .header #hide-mobile-menu li {
+		text-align: center;
+		border-bottom: 1px solid #fff;
+		padding: 10px;
+		margin: 0 50px;
+   }
+
+	.header #mobile-menu li:last-child, .header #hide-mobile-menu li:last-child {
+		border-bottom: none;
+   }
+}
+	
+/* HEADER */
+/* **************************************************************************************************** */
+
+/* **************************************************************************************************** */
+/* FOOTER */
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+/* FOOTER */
+/* **************************************************************************************************** */
+
+/* **************************************************************************************************** */
+/* LAYOUT */
+
+.layout-content {
+	min-height: 80vh;
+}
+
+/* LAYOUT */
+/* **************************************************************************************************** */

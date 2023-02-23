@@ -1,0 +1,31 @@
+.home-content {
+  padding: 20px;
+  color: #fff;
+}
+
+.home-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.home-flex span {
+  color: red;
+}
+
+.home-flex img {
+  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  .home-flex img {
+      width: 100%;
+ }
+ 
+  .col-6 {
+     width: 100%;
+ }
+}
